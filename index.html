@@ -1,143 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content ="width=device-width,                initial-scale=1.0">
-    
-      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
-    
-      <link rel="stylesheet" type="text/css" href="Styles/WebsiteStyle.css">
-    
-      <title>OneSkyeMedia</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Dr.Guap</title>
   </head>
-  <body>
-      <header>
-        <a href="index.html" class="header-brand"><img src ="images/OneSkye%20Logo.png"> </a>
-       <nav>
-       <ul>
-       <li><a href = "index.html">Home</a></li> 
-       <li><a href = "portfolio.html">Portfolio</a></li> 
-       <li><a href = "about.html">About Us</a></li>
-       <li><a href = "contact.html">Contact</a></li>
-       <li><a href ="content.html" class ="header-content">Content</a></li>   
-           
-       </ul>   
-           <a href ="content.html" class ="header-content">Content</a>
-          
-       </nav>
-      
-      
-      </header>
-      
-      
-      
-      <main>
-          
-     
-          <section class="index-banner">
-          <div class="vertical-center">
-          
-        <h2>OneSkye Media</h2>
-        <h4>The Aim of Our Studio is to create a variety of high quality assets and digital products <br>
-            for a wide range of industries. As the need for digital products <br>
-            on the global market increases, we here at OneSkye want to be able to capitalize on <br>
-            these opportunities and be able produce unique digital products
-            that can be recognized on an International and Global standard.</h4>
-        <h1>We aim to offer a variety of high quality content for a variety of different media types.
-         
-            We Offer Various Services such as:
-            <ul id="services offered"><li> Web Design Services.</li>      <!--List of services offered. -->
-                <li>Digital Illustration.</li>
-                <li>3D and 2D Animation Services.</li>
-                <li>Graphic Design.</li>
-                <li>3D Modeling and Sculpting</li>
-           </ul>     
-              
-        </h1>
-          
-          </div>
-        
- </section>
-          
-    <div class="wrapper">
-          
-    <section class="index-links">
-          
-       <a href ='#'><div class ="index-link-square">
-           
-            <h3>Home</h3>
-          </div> </a>
-        
-          <a href ='#'>  <div class ="index-link-rectangle">
-            <h3>Portfolio</h3>
-          </div> </a> 
-        
-           <a href ='#'> <div class ="index-link-square">
-            <h3>AboutUs</h3>
-          </div> </a>
-        
-           <a href ='#'> <div class ="index-link-rectangle">
-            <h3>Contact</h3>
-          </div> </a>
-          
-          
-    </section>
-      
-          
-      
-      
-      
-  
-           
-      
-      <footer>
-        <ul class="footer-links-main">
-            <li><a href ='#'>Home</a></li>
-            <li><a href ='#'>Portfolio</a></li>  
-            <li><a href ='#'>About Us</a></li>  
-            <li><a href ='#'>Contact</a></li>  
-          
-        </ul>
-          
-          <ul class="footer-links-updates">
-            <li><p>Latest Updates</p></li>
-            <li><a href ='#'>Latest Info</a></li>  
-            <li><a href ='#'>Posts</a></li>  
-            <li><a href ='#'>Feedback</a></li>  
-          
-        </ul>
-          
-          <div class="footer-sm">
-           <a href = "https://www.instagram.com/oneskyemedia246/?hl=en">
-             
-               <img src ="images/IG%20Logo.png" alt="instagram icon">
-                
-           </a>
-           <a href = "#"> 
-              
-               <img src = "images/Email%20Icon.png" alt="email icon">
-           
-           </a>
-            <a href = "#">
-               
-                <img src ="images/Phone%20Icon.png" alt="phone icon">
-         
-           </a>          
-          
-          
-          </div>
-      
-      </footer>
-         
-    </div>
-                    
-      </main>
-   
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=600 height=800 style="width: 600px; height: 800px; background: #231F20"></canvas>
+    <script src="Build/Builds.asm.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Builds.data.br",
+        frameworkUrl: "Build/Builds.asm.framework.js.br",
+        codeUrl: "Build/Builds.asm.js.br",
+        memoryUrl: "Build/Builds.asm.mem.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "FungTech",
+        productName: "Dr.Guap",
+        productVersion: "1.3",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
   </body>
-    
-      
-     
-           
-               
-
 </html>
